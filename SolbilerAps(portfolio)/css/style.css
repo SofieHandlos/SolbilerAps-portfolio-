@@ -1,0 +1,226 @@
+/* Basic CSS reset */
+*,
+:after,
+::before {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS starter her */
+.wrapper {
+  padding: 0 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  background-color: #f7f7f7;
+}
+
+/* Header & logo */
+.hoved_sektion {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px 0 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.logind_sektion {
+  display: flex;
+  align-items: center;
+}
+
+.menu_item {
+  margin-right: 70px;
+  font-size: 1.3rem;
+}
+
+.hoved_overskrift {
+  font-size: 1.7rem;
+}
+
+.logo_solpart {
+  color: #eb9103;
+}
+
+.logind {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+/* ----------------------- */
+
+/* Formular for afhetning, aflevering osv. */
+.billed_sektion {
+  background-image: url(../images/image_cover.jpeg);
+  height: 600px;
+  margin-top: 5px;
+  object-fit: cover;
+}
+
+.formular {
+  position: relative;
+  top: 90px;
+  width: 446px;
+  height: 245px;
+  background-color: transparent;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  margin-left: 215px;
+  padding-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.input_box {
+  display: inline-block;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.formular_overskrift {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#afhentning {
+  margin: 5px 30px;
+  width: 155px;
+  text-align: center;
+  padding: 5px;
+}
+
+#aflevering {
+  width: 155px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  left: 58%;
+  top: 31.5%;
+}
+
+#personer {
+  margin: 5px 30px;
+  width: 155px;
+  text-align: right;
+  padding: 4px;
+}
+
+#kufferter {
+  width: 155px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  left: 58%;
+  top: 61.5%;
+}
+
+.etiket_afhentning {
+  margin: 0px 0px 10px 30px;
+}
+
+.etiket_aflevering {
+  position: absolute;
+  left: 58%;
+  top: 22.5%;
+}
+
+.etiket_personer {
+  margin: 0px 0px 10px 30px;
+}
+
+.etiket_kufferter {
+  position: absolute;
+  left: 58%;
+  bottom: 40%;
+}
+
+.button {
+  position: relative;
+  top: 20px;
+  left: 169px;
+  padding: 5px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #eb9103;
+  color: white;
+  cursor: pointer;
+}
+/* ----------------------- */
+
+/* Bilsektion med oplysninger om de forskellige biler */
+.bil_sektion {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+.bil {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 35px 0px;
+  background-color: #fff;
+}
+
+img {
+  width: 200px;
+}
+
+.bilMM {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.bildetaljer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.prisogbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lejeudgift {
+  font-size: 1.6rem;
+  padding-bottom: 40px;
+}
+
+.booknu_knap {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: #eb9103;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ----------------------- */
+
+/* Responsive på større skærme */
+@media only screen and (max-width: 900px) {
+  .formular {
+    margin: 0 auto;
+  }
+  .bil {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+  }
+  .bilMM,
+  .bildetaljer {
+    width: auto;
+  }
+}
+/* ----------------------- */

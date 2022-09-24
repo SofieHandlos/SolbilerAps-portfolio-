@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Forside | Solbiler</title>
+  </head>
+  <body class="wrapper">
+    <!-- Header & logo -->
+    <div class="hoved_sektion">
+      <h1 class="hoved_overskrift">
+        <span class="logo_solpart">Sol</span>biler ApS
+      </h1>
+      <div class="logind_sektion">
+        <h2 class="menu_item">Kontakt os</h2>
+        <h2 class="menu_item">Om os</h2>
+        <h2 class="logind">Log ind</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="black"
+          width="32px"
+          height="32px"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 
+                2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Formular for afhetning, aflevering osv. -->
+    <div class="billed_sektion">
+      <div class="user_details">
+        <form class="formular" id="formular">
+          <h1 class="formular_overskrift">Find bilen som passer dig!</h1>
+          <div class="formular_felter">
+            <div class="input_box">
+              <label for="afhentning" class="etiket_afhentning"
+                >Jeg afhenter den:</label
+              >
+              <input type="date" id="afhentning" required />
+            </div>
+            <div class="input_box">
+              <label for="aflevering" class="etiket_aflevering"
+                >Jeg afleverer den:</label
+              >
+              <input type="date" id="aflevering" required />
+            </div>
+            <div class="input_box">
+              <label for="personer" class="etiket_personer"
+                >Antal personer:</label
+              >
+              <select id="personer" name="antalpesoner">
+                <option value="0">1 person</option>
+                <option value="1">2 personer</option>
+                <option value="2">3 personer</option>
+                <option value="3">4 personer</option>
+                <option value="4">5 personer</option>
+                <option value="4">6 personer</option>
+                <option value="4">7 personer</option>
+              </select>
+            </div>
+            <div class="input_box">
+              <label for="kufferter" class="etiket_kufferter"
+                >Antal kufferter:</label
+              >
+              <select id="kufferter" name="kufferter">
+                <option value="0">0 - kun taske</option>
+                <option value="1">1 kuffert</option>
+                <option value="2">2 kufferter</option>
+                <option value="3">3 kufferter</option>
+                <option value="4">4 kufferter</option>
+              </select>
+            </div>
+            <div>
+              <button id="søg" class="button" type="submit">Søg</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Templates af de forskellige oplysninger om bilerne -->
+    <section class="bil_sektion" id="bil_sektion"></section>
+    <template id="skabelon_output">
+      <div class="bil">
+        <img />
+        <div class="bilMM"></div>
+        <div class="bildetaljer">
+          <div class="kategori">Kategori:</div>
+          <div class="antalpersoner">Personer:</div>
+          <div class="antalkufferter">Kufferter:</div>
+        </div>
+        <div class="prisogbook">
+          <div class="lejeudgift"></div>
+          <a href="#" class="booknu_knap">Book nu</a>
+        </div>
+      </div>
+    </template>
+
+    <script src="Script/script.js"></script>
+  </body>
+</html>
